@@ -19,7 +19,7 @@
   .corprincipal{
 
     background-color: var(--primary-color); 
-    z-index: 1; 
+    z-index: 0; 
 
   }
 
@@ -32,7 +32,7 @@
   .cornavbackground{
 
     background-color: var(--navbackground-color);
-    z-index: 2; 
+    z-index: 0; 
   }
 
 
@@ -58,7 +58,7 @@
 
   .image{
     background-image: url('Imagens/BackgroundNav.jpeg'); 
-    opacity: 0.6;
+    opacity: 0.7;
     width: 100%;
     top: 0;
     left: 0;
@@ -71,6 +71,67 @@
 
 /* Fim Cores */
   
+/*Logo */
+
+.LogoAbaixo{
+
+  width: 15%;
+ filter: brightness(1.2) contrast(3.3) saturate(3.5) drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
+
+}
+
+.texttopo{
+
+text-shadow: 3px 3px 8px black;
+
+}
+
+.botao{
+  width: 10%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 50px black;
+  border-radius: 25px;
+  color: var(--primary-color);
+  border: 0;
+  padding: 0.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.animation{
+
+position: relative;
+animation: animated 0.5s ease-in-out infinite alternate;
+
+}
+
+@keyframes animated {
+  0% {
+
+  top: 0;
+
+  }
+
+    50%{
+
+    top:2.5px;
+
+    }
+
+  100% {
+
+  top: 5px;
+
+  }
+
+}
+
+
+
+/*Logo */
+
+
+
 
 /* Classe usando Jacques Francois */
     .font-jacques {

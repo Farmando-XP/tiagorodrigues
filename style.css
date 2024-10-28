@@ -1,7 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&display=swap');
+/* Fontes */
+
 :root {
 
     --primary-color:#0077B6D9; /* Cor principal */
     --secondary-color: #FFFFFF; /* Cor Secundaria */
-    --navbackground-color: #0000007D;/* Cor da NavBar */
+    --navbackground-color: #000000ee;/* Cor da NavBar */
+
+  }
+
+  header {
+    position: relative; 
+    height: 10%; 
+}
+
+/*  Cores */
+  .corprincipal{
+
+    background-color: var(--primary-color); 
+    z-index: 1; 
+
+  }
+
+  .corsecundaria{
+
+    background-color: var(--secondary-color);
     
   }
+
+  .cornavbackground{
+
+    background-color: var(--navbackground-color);
+    z-index: 2; 
+  }
+
+
+  .corprincipaltext{
+
+    color: var(--primary-color); 
+
+  }
+
+  .corsecundariatext{
+
+    color: var(--secondary-color);
+    
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: white; 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff; 
+}
+
+  .image{
+    background-image: url('Imagens/BackgroundNav.jpeg'); 
+    opacity: 0.6;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; 
+    background-position: center; 
+    z-index: 0; 
+  }
+
+/* Fim Cores */
+  
+
+/* Classe usando Jacques Francois */
+    .font-jacques {
+    font-family: 'Jacques Francois', serif;
+    }
+
+/* Classe usando Josefin Sans */
+    .font-josefin-sans {
+    font-family: 'Josefin Sans', sans-serif;
+    }
+
+/* Classe usando Josefin Slab */
+    .font-josefin-slab {
+    font-family: 'Josefin Slab', serif;
+    }
+
+/* Classe usando Julius Sans One */
+    .font-julius {
+    font-family: 'Julius Sans One', sans-serif;
+    }

@@ -56,6 +56,12 @@
     color: #ffffff; 
 }
 
+.navbar-toggler svg{
+  color: #ffffff;
+}
+
+
+
   .image{
     background-image: url('Imagens/BackgroundNav.jpeg'); 
     opacity: 0.7;

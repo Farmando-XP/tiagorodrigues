@@ -289,7 +289,44 @@ animation: animated 0.5s ease-in-out infinite alternate;
     height: 35px;
 }
 
+/* Responsividade da seção principal*/
+
+@media(max-width: 426px){
+  #services .imagens-maiores{
+    margin-top: 28px;
+
+    #principal-1, #principal-4{
+      display: none;
+    }
+  }
+
+  #services .imagens-menores{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    img{
+      width: 180px;
+    }
+    #menor-3, #menor-4{
+      display: none;
+    }
+  }
+
+  #services h2{
+    margin-top: 32px;
+    padding: 0;
+  }
+  
+  #services .container-fluid h2{
+    margin-bottom: 20px;
+  }
+
+  #services .container-fluid p{
+    margin-top: 20px;
+  }
+}
+
 /* Serve para deixar responsivo */
+
 @media (max-width: 768px) {
     #titulo {
         font-size: 50px;
@@ -316,3 +353,4 @@ animation: animated 0.5s ease-in-out infinite alternate;
         justify-content: space-around;
     }
 }
+

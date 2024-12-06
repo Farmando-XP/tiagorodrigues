@@ -60,11 +60,9 @@
   color: #ffffff;
 }
 
-.blue-filter {
-  filter: sepia(100%) saturate(500%) hue-rotate(200deg);
-}
 
   .image{
+    filter: sepia(100%) saturate(500%) hue-rotate(200deg);
     background-image: url('Imagens/BackgroundNav.jpeg'); 
     opacity: 0.7;
     width: 100%;

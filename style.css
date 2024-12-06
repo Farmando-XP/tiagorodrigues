@@ -61,24 +61,19 @@
 }
 
 
-.image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('Imagens/BackgroundNav.jpeg');
-  background-size: cover;
-  background-position: center;
-  filter: hue-rotate(180deg) saturate(200%) brightness(80%);
-  opacity: 0.7;
-  z-index: -1;
-}
 
-nav {
-  position: relative;
-  z-index: 1;
-}
+  .image{
+    background-image: url('Imagens/BackgroundNav.jpeg'); 
+    opacity: 0.7;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; 
+    background-position: center; 
+    z-index: 0; 
+  }
 
 /* Fim Cores */
   

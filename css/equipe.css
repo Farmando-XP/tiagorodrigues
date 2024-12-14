@@ -37,6 +37,7 @@
 .col-md-6{
     display: grid;
     place-content: center;
+    max-width: 374px;
 }
 
 .slide li{
@@ -109,6 +110,8 @@
     margin-right: 20px;
 }
 
+
+
 #radio1:checked ~ .nav-auto .auto-btn1{
     background-color: #0077B6;
     width: 20px;
@@ -127,4 +130,74 @@
 #radio4:checked ~ .nav-auto .auto-btn4{
     background-color: #0077B6;
     width: 20px;
+}
+
+@media (max-width: 428px){
+
+    #carrossel{
+        margin-top: -30px;
+    }
+
+    .slides{
+        margin: 0;
+        height: 610px;
+    }
+    
+    .nav-manual{
+        position: absolute;
+        width: 380px;
+        display: flex;
+        margin-top: 28px;
+        justify-content: center;
+    }
+
+    .slide h2{
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    .slide img{
+        border-radius: 20px;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .slide p{
+        font-size: 15px;
+        max-width: 380px;
+    }
+
+    .active{
+        margin-left: -140px;
+    }
+
+    #radio1:checked ~ .active{
+        margin-left: -140px;
+    }
+
+    #radio2:checked ~ .active{
+        margin-left: -1140px;
+    }
+
+    #radio3:checked ~ .active{
+        margin-left: -2140px;
+    }
+
+    #radio4:checked ~ .active{
+        margin-left: -3140px;
+    }
+
+    .nav-auto{
+        margin-top: 640px;
+        margin-left: 150px;
+    }
+    
+    .col-md-6{
+        display: grid;
+        justify-content: center;
+        align-content: start;
+        max-width: 374px;
+        margin: 0;
+    }
+
 }

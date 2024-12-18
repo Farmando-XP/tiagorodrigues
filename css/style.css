@@ -6,7 +6,7 @@
 
     --primary-color:#0077B6D9; /* Cor principal */
     --secondary-color: #FFFFFF; /* Cor Secundaria */
-    --navbackground-color: #000000ee;/* Cor da NavBar */
+    --navbackground-color: #03385cda;/* Cor da NavBar */
 
   }
 
@@ -16,55 +16,42 @@
 }
 
 /*  Cores */
-  .corprincipal{
-
-    background-color: var(--primary-color); 
-    z-index: 0; 
-
-  }
-
   .corsecundaria{
-
     background-color: var(--secondary-color);
     
   }
 
   .cornavbackground{
-
     background-color: var(--navbackground-color);
     z-index: 0; 
   }
 
-
   .corprincipaltext{
-
     color: var(--primary-color); 
-
   }
 
   .corsecundariatext{
-
     color: var(--secondary-color);
     
   }
 
   .navbar-nav .nav-item .nav-link {
     color: white; 
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #ffffff; 
+    color: #51ccf5;
 }
 
 .navbar-toggler svg{
   color: #ffffff;
 }
 
-
-
   .image{
-    background-image: url('../Imagens/BackgroundNav.jpeg'); 
-    opacity: 0.7;
+    background-image: url('../Imagens/imagem-fundo.svg'); 
     width: 100%;
     top: 0;
     left: 0;
@@ -79,28 +66,47 @@
 /*Logo */
 
 .LogoAbaixo{
-
   width: 15%;
   filter: brightness(1.2) contrast(3.3) saturate(3.5) drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
 
 }
 
-.texttopo{
+.title-initial{ /*refere-se a Clínica*/
+  font-size: 2rem;
+}
 
-text-shadow: 3px 3px 8px black;
+.title-home{ /*refere-se ao nome*/
+  font-size: 3.7rem;
 
 }
+
+.sub-title{ /*refere-se ao Conheça a clínica*/
+  font-size: 1.6rem;
+}
+
+
 
 .botao{
   width: 10%;
   background-color: #FFFFFF;
-  box-shadow: 0px 10px 50px black;
+  box-shadow: 2px 8px 7px black;
   border-radius: 25px;
   color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
   border: 0;
   padding: 0.5%;
   display: flex;
   justify-content: center;
+  transition: 500ms;
+}
+
+.botao:hover{
+  transform: scale(1.1);
+}
+
+.botao a{
+  text-decoration: none;
 }
 
 .animation{
@@ -131,11 +137,7 @@ animation: animated 0.5s ease-in-out infinite alternate;
 
 }
 
-
-
 /*Logo */
-
-
 
 
 /* Classe usando Jacques Francois */
@@ -167,8 +169,6 @@ animation: animated 0.5s ease-in-out infinite alternate;
   text-align: center;
   padding: 20px;
 }
-
-
 
 #services .main-title{
   font-size: 57px;
@@ -286,11 +286,50 @@ animation: animated 0.5s ease-in-out infinite alternate;
 #redes a img {
     width: 35px; /* Ajusta o tamanho dos ícones para ficarem menores */
     height: 35px;
+    transition: 0.5s;
+}
+
+#redes a img:hover{
+  transform: translateY(-10px);
+}
+
+.rd-sociais a{
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+
+.rd-sociais a:hover{
+    color: #51ccf5;
+}
+
+
+
+footer{
+  background-color: var(--primary-color);
 }
 
 /* Responsividade da seção principal*/
 
-@media(max-width: 426px){
+@media(max-width: 427px){
+  .LogoAbaixo{
+    display: none;
+  }
+
+  .title-initial{ /*refere-se a Clínica*/
+    font-size: 1.7rem;
+    padding-top: 70px;
+  }
+  
+  .title-home{ /*refere-se ao nome*/
+    font-size: 2.5rem;
+  
+  }
+  
+  .sub-title{ /*refere-se ao Conheça a clínica*/
+    font-size: 1.2rem;
+  }
+
   #services .imagens-maiores{
     margin-top: 28px;
 

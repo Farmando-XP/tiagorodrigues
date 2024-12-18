@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+/*Thiago*/
+
+.tiago{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.tiago img#F-Tiago{
+    width: 400px;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.tiago .LogoAbaixo{
+    width: 200px;
+}
+
+/*Slider*/
+
 #carrossel{
     color: #000000ee;
 }
@@ -132,7 +153,34 @@
     width: 20px;
 }
 
+@media screen and (max-width: 769px){
+    .tiago{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .tiago .col-md-6{
+        min-width: 468px;
+    }
+
+}
+
 @media (max-width: 428px){
+
+    /*Tiago*/
+
+    .tiago .col-md-6 p{
+        font-size: 13px;
+    }
+    
+    .tiago img#F-Tiago{
+        width: 300px;
+    }
+
+    /*Slider*/
 
     #carrossel{
         margin-top: -30px;
@@ -201,3 +249,4 @@
     }
 
 }
+

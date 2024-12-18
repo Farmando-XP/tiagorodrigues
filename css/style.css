@@ -63,7 +63,7 @@
 
 
   .image{
-    background-image: url('/Imagens/BackgroundNav.jpeg'); 
+    background-image: url('../Imagens/BackgroundNav.jpeg'); 
     opacity: 0.7;
     width: 100%;
     top: 0;
@@ -71,8 +71,7 @@
     right: 0;
     bottom: 0;
     background-size: cover; 
-    background-position: center; 
-    z-index: 0; 
+    background-position: center;
   }
 
 /* Fim Cores */
@@ -82,7 +81,7 @@
 .LogoAbaixo{
 
   width: 15%;
- filter: brightness(1.2) contrast(3.3) saturate(3.5) drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
+  filter: brightness(1.2) contrast(3.3) saturate(3.5) drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
 
 }
 

@@ -9,9 +9,8 @@ function next(){
     if(thisClick - lastClick < 100){
         return;
     }
+    
     lastClick = thisClick;
-
-    console.log(count)
     if(count>3){
         count = 1;
     }
@@ -29,7 +28,6 @@ function back(){
     }
     lastClick = thisClick;
 
-    console.log(count)
     if(count<2){
         count = 4;
     }
